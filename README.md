@@ -17,7 +17,7 @@ App Store URL、Google Play Store URLは記述しなくても良い
 
 ### config.rbのTumblarghの設定を変更
 
-```rb config.rb
+```rb
   require 'tumblargh'
 
   activate :tumblargh,
