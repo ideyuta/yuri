@@ -1,0 +1,27 @@
+.Post {
+  @include size(290px, auto);
+  display: none;
+  padding: 10px;
+  > .inner {
+    @include border-radius(6px);
+    background: $white;
+    padding: 8px;
+  } 
+  .thumb {
+    width: 100%;
+  }
+  iframe {
+    @include size(100%, auto);
+  }
+}
+
+// --------------------------------
+// Cosmetic
+// --------------------------------
+
+@include media(phone) {
+  .Post {
+    width: 96%;
+    padding: 4px 2%;
+  }
+}

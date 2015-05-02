@@ -1,0 +1,53 @@
+.Profile {
+  @include border(1px, solid, $theme-color, 24px);
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 64px;
+  background: darken($theme-color, 2%);
+  .name {
+    @include typo(24px, $black, 100, 1.8);
+    padding: 12px 0;
+    letter-spacing: 0.05em;
+    span {
+      padding: 0 0 0 16px;
+    }
+  }
+  .intro {
+    @include typo(15px, $light-black, 300, 1.8);
+    letter-spacing: 0.05em;
+    padding: 24px 0;
+  }
+  .bio {
+    @include typo(12px, $light-black, 300, 1.8);
+    letter-spacing: 0.05em;
+    padding: 24px 0;
+  }
+  .address {
+    @include size(96%, 48px);
+    @include border-radius(4px);
+    padding: 0 2%;
+    background: darken($theme-color, 12%);
+    p {
+      @include typo(14px, $light-black, 300, 48px);
+      span {
+        padding: 0 16px 0 0;
+      }
+    }
+  }
+}
+
+// --------------------------------
+// Cosmetic
+// --------------------------------
+
+@include media(phone) {
+  .Profile {
+    border: 0;
+    padding: 16px;
+    .address {
+      p {
+        font-size: 12px;
+      }
+    }
+  } 
+}

@@ -1,0 +1,13 @@
+{block:Photoset}
+{block:Photos}
+%div.photo
+  %a(href='{Permalink}')
+    %img.thumb(alt='{PhotoAlt}' src='{PhotoURL-500}')
+  {block:Caption}
+  %div.caption {Caption}
+  {/block:Caption}
+{/block:Photos}
+{block:Caption}
+%div.caption {Caption}
+{/block:Caption}
+{/block:Photoset}

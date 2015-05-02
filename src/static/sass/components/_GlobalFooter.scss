@@ -1,0 +1,8 @@
+.GlobalFooter {
+  @include border(1px 0 0 0, solid, darken($theme-color, 8%));
+  padding: 32px 24px;
+  margin: 32px 0 0 0;
+  p {
+    color: darken($theme-color, 32%);
+  }
+}

@@ -1,0 +1,41 @@
+!!! 5
+%html
+  = partial "_partial/head"
+  %body
+    = partial "_partial/header"
+
+    {block:IndexPage}
+    %div.Posts
+      {block:Posts}
+      %div.Post
+        %div.inner
+          = partial "_partial/text"
+          = partial "_partial/photo"
+          = partial "_partial/photoset"
+          = partial "_partial/panorama"
+          = partial "_partial/quote"
+          = partial "_partial/link"
+          = partial "_partial/video"
+          = partial "_partial/audio"
+      {/block:Posts}
+    = partial "_partial/pagination"
+    = partial "_partial/profile"
+    {/block:IndexPage}
+
+    {block:PermalinkPage}
+    %div.PostDetail
+      {block:Posts}
+      %div.Post
+        %div.inner
+          = partial "_partial/text"
+          = partial "_partial/photo"
+          = partial "_partial/photoset"
+          = partial "_partial/panorama"
+          = partial "_partial/quote"
+          = partial "_partial/link"
+          = partial "_partial/video"
+          = partial "_partial/audio"
+      {/block:Posts}
+    = partial "_partial/pagination"
+    {/block:PermalinkPage}
+    = partial "_partial/footer"

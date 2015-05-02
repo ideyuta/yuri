@@ -1,0 +1,10 @@
+.Pagination {
+  @include size(300px, 60px);
+  padding: 24px 0;
+  margin: 0 auto;
+  text-align: center;
+  background: $theme-color;
+  .btn {
+    @include btn-varient($dark-gray, lighten($theme-color, 14%));
+  }
+}

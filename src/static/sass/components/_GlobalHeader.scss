@@ -1,0 +1,66 @@
+.GlobalHeader {
+  @include border(0 0 1px 0, solid, $white);
+  @include clearfix;
+  @include size(100%, 86px);
+  background: $white;
+  > .inner {
+    @include clearfix;
+    @include size(100%);
+    position: relative;
+  }
+}
+
+.SiteTitle {
+  @include size(auto, 100%);
+  float: left;
+  padding: 0 24px;
+  p {
+    color: darken($theme-color, 24%);
+    letter-spacing: 0.08em;
+    font-size: 24px;
+    line-height: 86px;
+  }
+}
+
+.Navigation {
+  @include size(auto, 100%);
+  float: right;
+  .nav {
+    @include border(0 0 0 1px, solid, $theme-color);
+    float: left;
+    a {
+      @include typo(13px, darken($theme-color, 24%), 300, 22px);
+      display: inline-block;
+      height: 22px;
+      padding: 32px;
+      text-decoration: none;
+      &:hover {
+        background: lighten($theme-color, 10%);
+      }
+    }
+  }
+}
+
+
+// --------------------------------
+// Cosmetic
+// --------------------------------
+
+@include media(phone) {
+  .SiteTitle {
+    padding: 0 8px;
+    p {
+      font-size: 18px;
+    }
+  }
+  .Navigation {
+    .nav {
+      a  {
+        padding: {
+          left: 16px;
+          right: 16px;
+        }
+      }
+    }
+  }
+}
