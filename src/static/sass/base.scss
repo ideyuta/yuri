@@ -57,7 +57,7 @@ p {
 
 .PostDetail {
   .Post {
-    position: relative !important;
+    display: block;
     width: 800px;
     margin: 0 auto;
     .caption {
@@ -83,7 +83,7 @@ p {
       display: none;
     }
   }
-  .Post {
+  .PostDetail {
     .Post {
       width: 96%;
     }

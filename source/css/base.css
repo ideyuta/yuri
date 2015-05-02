@@ -1099,7 +1099,7 @@ p {
 }
 
 .PostDetail .Post {
-  position: relative !important;
+  display: block;
   width: 800px;
   margin: 0 auto;
 }
@@ -1326,7 +1326,7 @@ p {
     display: none;
   }
 
-  .Post .Post {
+  .PostDetail .Post {
     width: 96%;
   }
 }
